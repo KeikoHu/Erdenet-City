@@ -1,14 +1,7 @@
-:root{
+:root{ /* tvrvvleed zarim oruulah ungu edre beldsen */
   --bg:#09090b;
-  --card:#0b0b10;
-  --card2:#111118;
   --border:#27272a;
   --text:#fafafa;
-  --muted:#a1a1aa;
-  --muted2:#71717a;
-  --green:#22c55e;
-  --green2:rgba(34,197,94,.2);
-  --danger:#ef4444;
 }
 html {
   scroll-behavior: smooth;
@@ -18,54 +11,54 @@ body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg);
-  color: var(--text);
+  color: var(--text); 
+} 
+section:first-child {/* section hesguude hamgyn exny section songoj awah */
+  height: 60vh; /* vh buyu viewport height. 60% viewport height*/
 }
-section:first-child {
-  height: 60vh;
-}
-.navbar{
+.navbar{ 
   background-color: var(--card2);
   height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border);
-  padding: 0 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: flex; /* flexible bolgono */
+  flex-direction: row; /* direction ni hewtee*/
+  justify-content: space-between; /* 2talruu ni salgah*/
+  align-items: center; /* vgee golluulah*/
+  border-bottom: 1px solid var(--border); /* dood talyn border color ni*/
+  padding: 0 20px;  
+  position: sticky;  /* ene 3 hog*/
+  top: 0;         /* idk why its not working */
+  z-index: 1000;  /* ...*/
 }
-.links{
-  display: flex;
+.links{ 
+  display: flex; 
   justify-content: space-around;
-  gap: 20px;
-  padding-right: 20px;
+  gap: 20px; /* xoorondyn zai*/
+  padding-right: 20px; /* baruun talaas ni shahaad holduulah*/
 }
 nav a {
-  color: white; 
+  color: white; /* vgny ungu*/
   text-decoration: none; 
 }
 .logo{
-  margin-left: 10px;
+  margin-left: 10px; /* zvvn talaas ni shahaad xolduulah*/
 }
 .size1{
-  font-size: 40px;
+  font-size: 40px; /* vsegny xemjee */
 }
 .size2{
-  font-size: 20px;
+  font-size: 20px; 
 }
 .about{
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 50px 20px 20px 20px;
+  padding: 50px 20px 20px 20px; /* 4talaas ni shahsan bn*/
   gap: 10px;
   width: 100%;
 }
 .manage{
-  display: flex;
+  display: flex; 
   flex-direction: column;
   gap: 20px;
   padding: 20px;
@@ -77,14 +70,15 @@ nav a {
   flex-wrap: wrap;
 }
 .picture {
-  flex: 1;
-  min-width: 0;
+  flex: 1; /* Take up available space, making it possible to shrink*/
+  min-width: 0; /* Allow shrinking */
+
 }
 .picture img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 6px; /* zuragny bulan */
   display: block;
 }
 .video{
